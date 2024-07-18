@@ -18,7 +18,7 @@ import { TokenDto } from './dto/token.dto';
 
 @Controller('auth')
 export class AuthController {
-  constructor(private authService: AuthService) {}
+  constructor(private authService: AuthService) { }
 
   @HttpCode(HttpStatus.OK)
   @ApiOkResponse({
